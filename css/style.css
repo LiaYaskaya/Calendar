@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(19, 20, 23, 0.9);
+    color: #fff;
+    font: 500 12px/24px Roboto, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: top;    
+    color: #fff;
+    background-color: rgba(140, 50, 255, 1);
+    padding: 8px 16px;    
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    text-align: center;    
+    font: 500 18px/24px Roboto, Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
