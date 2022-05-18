@@ -10,53 +10,174 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <svg style="display: none;">
+        <symbol id="arrow-left" viewBox="0 0 8 12">
+            <path d="M8 1.4L6.48649 0L0 6L6.48649 12L8 10.6L3.02703 6L8 1.4Z" fill="currentColor" />
+        </symbol>
+    </svg>
 </head>
 
 <body>
-    <div class="calendar__overlay">
-        <div class="calendar">
-            <div class="calendar__head">
-                <button class="calendar__prev-month" type="button"></button>
-                <span class="calendar__month">Январь</span>
-                <button class="calendar__next-month" type="button"></button>
-            </div>
-            <button class="calendar__date" type="button">1</button>
-            <button class="calendar__date" type="button">2</button>
-            <button class="calendar__date" type="button">3</button>
-            <button class="calendar__date" type="button">4</button>
-            <button class="calendar__date" type="button">5</button>
-            <button class="calendar__date" type="button">6</button>
-            <button class="calendar__date" type="button">7</button>
-            <button class="calendar__date" type="button">8</button>
-            <button class="calendar__date" type="button">9</button>
-            <button class="calendar__date" type="button">10</button>
-            <button class="calendar__date" type="button">11</button>
-            <button class="calendar__date" type="button">12</button>
-            <button class="calendar__date" type="button">13</button>
-            <button class="calendar__date" type="button">14</button>
-            <button class="calendar__date" type="button">15</button>
-            <button class="calendar__date" type="button">16</button>
-            <button class="calendar__date" type="button">17</button>
-            <button class="calendar__date" type="button">18</button>
-            <button class="calendar__date" type="button">19</button>
-            <button class="calendar__date" type="button">20</button>
-            <button class="calendar__date" type="button">21</button>
-            <button class="calendar__date" type="button">22</button>
-            <button class="calendar__date" type="button">23</button>
-            <button class="calendar__date" type="button">24</button>
-            <button class="calendar__date" type="button">25</button>
-            <button class="calendar__date" type="button">26</button>
-            <button class="calendar__date" type="button">27</button>
-            <button class="calendar__date" type="button">28</button>
-            <button class="calendar__date" type="button">29</button>
-            <button class="calendar__date" type="button">30</button>
-            <button class="calendar__date calendar__next-month-date" type="button">1</button>
-            <button class="calendar__date calendar__next-month-date" type="button">2</button>
-            <button class="calendar__date calendar__next-month-date" type="button">3</button>
-            <button class="calendar__date calendar__next-month-date" type="button">4</button>
-            <button class="calendar__date calendar__next-month-date" type="button">5</button>
+
+    <!-- default type -->
+
+    <div class="calendar">
+        <div class="calendar__head">
+            <button class="calendar__btn _prev" type="button" aria-label="предыдущий месяц">
+                <svg class="calendar__btn-icon">
+                    <use xlink:href="#arrow-left" />
+                </svg>
+            </button>
+            <span class="calendar__month">Январь</span>
+            <button class="calendar__btn _next" type="button" aria-label="следующий месяц">
+                <svg class="calendar__btn-icon">
+                    <use xlink:href="#arrow-left" />
+                </svg>
+            </button>
         </div>
+        <button class="calendar__date" type="button">1</button>
+        <button class="calendar__date" type="button">2</button>
+        <button class="calendar__date" type="button">3</button>
+        <button class="calendar__date" type="button">4</button>
+        <button class="calendar__date" type="button">5</button>
+        <button class="calendar__date" type="button">6</button>
+        <button class="calendar__date" type="button">7</button>
+        <button class="calendar__date" type="button">8</button>
+        <button class="calendar__date" type="button">9</button>
+        <button class="calendar__date" type="button">10</button>
+        <button class="calendar__date" type="button">11</button>
+        <button class="calendar__date" type="button">12</button>
+        <button class="calendar__date" type="button">13</button>
+        <button class="calendar__date" type="button">14</button>
+        <button class="calendar__date" type="button">15</button>
+        <button class="calendar__date" type="button">16</button>
+        <button class="calendar__date" type="button">17</button>
+        <button class="calendar__date" type="button">18</button>
+        <button class="calendar__date" type="button">19</button>
+        <button class="calendar__date" type="button">20</button>
+        <button class="calendar__date" type="button">21</button>
+        <button class="calendar__date" type="button">22</button>
+        <button class="calendar__date" type="button">23</button>
+        <button class="calendar__date" type="button">24</button>
+        <button class="calendar__date" type="button">25</button>
+        <button class="calendar__date" type="button">26</button>
+        <button class="calendar__date" type="button">27</button>
+        <button class="calendar__date" type="button">28</button>
+        <button class="calendar__date" type="button">29</button>
+        <button class="calendar__date" type="button">30</button>
+        <button class="calendar__date _next" type="button">1</button>
+        <button class="calendar__date _next" type="button">2</button>
+        <button class="calendar__date _next" type="button">3</button>
+        <button class="calendar__date _next" type="button">4</button>
+        <button class="calendar__date _next" type="button">5</button>
     </div>
+
+    <!-- active type-1 -->
+
+    <div class="calendar">
+        <div class="calendar__head">
+            <button class="calendar__btn _prev" type="button" aria-label="предыдущий месяц">
+                <svg class="calendar__btn-icon">
+                    <use xlink:href="#arrow-left" />
+                </svg>
+            </button>
+            <span class="calendar__month">Январь</span>
+            <button class="calendar__btn _next" type="button" aria-label="следующий месяц">
+                <svg class="calendar__btn-icon">
+                    <use xlink:href="#arrow-left" />
+                </svg>
+            </button>
+        </div>
+        <button class="calendar__date" type="button">1</button>
+        <button class="calendar__date _start _end _active" type="button">2</button>
+        <button class="calendar__date" type="button">3</button>
+        <button class="calendar__date" type="button">4</button>
+        <button class="calendar__date" type="button">5</button>
+        <button class="calendar__date" type="button">6</button>
+        <button class="calendar__date" type="button">7</button>
+        <button class="calendar__date" type="button">8</button>
+        <button class="calendar__date" type="button">9</button>
+        <button class="calendar__date" type="button">10</button>
+        <button class="calendar__date" type="button">11</button>
+        <button class="calendar__date" type="button">12</button>
+        <button class="calendar__date" type="button">13</button>
+        <button class="calendar__date" type="button">14</button>
+        <button class="calendar__date" type="button">15</button>
+        <button class="calendar__date" type="button">16</button>
+        <button class="calendar__date" type="button">17</button>
+        <button class="calendar__date" type="button">18</button>
+        <button class="calendar__date" type="button">19</button>
+        <button class="calendar__date" type="button">20</button>
+        <button class="calendar__date" type="button">21</button>
+        <button class="calendar__date" type="button">22</button>
+        <button class="calendar__date" type="button">23</button>
+        <button class="calendar__date" type="button">24</button>
+        <button class="calendar__date" type="button">25</button>
+        <button class="calendar__date" type="button">26</button>
+        <button class="calendar__date" type="button">27</button>
+        <button class="calendar__date" type="button">28</button>
+        <button class="calendar__date" type="button">29</button>
+        <button class="calendar__date" type="button">30</button>
+        <button class="calendar__date _next" type="button">1</button>
+        <button class="calendar__date _next" type="button">2</button>
+        <button class="calendar__date _next" type="button">3</button>
+        <button class="calendar__date _next" type="button">4</button>
+        <button class="calendar__date _next" type="button">5</button>
+    </div>
+
+    <!-- active type-2 -->
+
+    <div class="calendar">
+        <div class="calendar__head">
+            <button class="calendar__btn _prev" type="button" aria-label="предыдущий месяц">
+                <svg class="calendar__btn-icon">
+                    <use xlink:href="#arrow-left" />
+                </svg>
+            </button>
+            <span class="calendar__month">Январь</span>
+            <button class="calendar__btn _next" type="button" aria-label="следующий месяц">
+                <svg class="calendar__btn-icon">
+                    <use xlink:href="#arrow-left" />
+                </svg>
+            </button>
+        </div>
+        <button class="calendar__date" type="button">1</button>
+        <button class="calendar__date _start _active" type="button">2</button>
+        <button class="calendar__date _active" type="button">3</button>
+        <button class="calendar__date _active" type="button">4</button>
+        <button class="calendar__date _active" type="button">5</button>
+        <button class="calendar__date _active" type="button">6</button>
+        <button class="calendar__date _active" type="button">7</button>
+        <button class="calendar__date _active" type="button">8</button>
+        <button class="calendar__date _active" type="button">9</button>
+        <button class="calendar__date _active" type="button">10</button>
+        <button class="calendar__date _end _active" type="button">11</button>
+        <button class="calendar__date" type="button">12</button>
+        <button class="calendar__date" type="button">13</button>
+        <button class="calendar__date" type="button">14</button>
+        <button class="calendar__date" type="button">15</button>
+        <button class="calendar__date" type="button">16</button>
+        <button class="calendar__date" type="button">17</button>
+        <button class="calendar__date" type="button">18</button>
+        <button class="calendar__date" type="button">19</button>
+        <button class="calendar__date" type="button">20</button>
+        <button class="calendar__date" type="button">21</button>
+        <button class="calendar__date" type="button">22</button>
+        <button class="calendar__date" type="button">23</button>
+        <button class="calendar__date" type="button">24</button>
+        <button class="calendar__date" type="button">25</button>
+        <button class="calendar__date" type="button">26</button>
+        <button class="calendar__date" type="button">27</button>
+        <button class="calendar__date" type="button">28</button>
+        <button class="calendar__date" type="button">29</button>
+        <button class="calendar__date" type="button">30</button>
+        <button class="calendar__date _next" type="button">1</button>
+        <button class="calendar__date _next" type="button">2</button>
+        <button class="calendar__date _next" type="button">3</button>
+        <button class="calendar__date _next" type="button">4</button>
+        <button class="calendar__date _next" type="button">5</button>
+    </div>
+
 </body>
 
 </html>
